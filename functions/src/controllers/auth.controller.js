@@ -70,10 +70,6 @@ exports.login = async (req, res) => {
   }
 
   try {
-    // Use Firebase Auth REST API to verify email/password
-    // Because admin SDK doesn't do password validation.
-    // Example REST API call:
-    // https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password
 
     const fetch = require('node-fetch');
 

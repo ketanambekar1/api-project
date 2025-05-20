@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 // Optional: error handler middleware for unexpected errors
 app.use((err, req, res, next) => {
-    console.error(err.stack);
+   console.error("❌ Unexpected error:", err);
     res.status(500).json({
         isSuccess: false,
         error: "Internal Server Error",
